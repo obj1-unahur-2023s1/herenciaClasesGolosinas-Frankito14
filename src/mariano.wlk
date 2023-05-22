@@ -7,6 +7,16 @@ object mariano {
 	
 	method desechar (_golosina) { golosinas.remove(_golosina) }
 	
+	method comprarMuchasGolosinas(listaGolosinas){
+		golosinas.addAll(listaGolosinas)
+	}
+	
+	method baniarGolosina(golosina){
+		golosinas.add(new GolosinaBaniada(golosinaInterior=golosina))
+	}
+	
+	
+	
 	method golosinas() { return golosinas }
 	method primerGolosina() { return golosinas.first() }
 	method ultimaGolosina() { return golosinas.last() }
